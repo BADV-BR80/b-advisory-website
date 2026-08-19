@@ -8,7 +8,7 @@ A lightweight, single-page website for B Advisory. The site uses plain HTML and 
 | --- | --- |
 | `index.html` | Main single-page website, content, metadata, and links |
 | `styles.css` | Responsive layout, typography, color, and interaction styles |
-| `favicon.svg` | Scalable browser icon |
+| `assets/b-advisory-logo.png` | Official transparent B Advisory logo and browser icon |
 | `404.html` | GitHub Pages–compatible not-found page |
 
 ## Preview locally
