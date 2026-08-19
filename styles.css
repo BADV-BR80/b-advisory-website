@@ -63,7 +63,7 @@ h1 em, h2 em { color: var(--accent); font-family: var(--serif); font-weight: 400
 .approach-copy p + p { margin-top: 1.8rem; color: var(--muted); }
 .approach-note { margin: clamp(3rem, 5vw, 5rem) 0 0; display: flex; gap: 0; color: var(--brand-gray); font-size: .65rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .approach-note span { display: flex; align-items: center; }
-.approach-note span:not(:last-child)::after { content: "→"; margin: 0 1rem; color: var(--brand-orange); font-size: .85rem; line-height: 1; }
+.approach-note .progress-arrow { margin: 0 1rem; color: var(--brand-orange); font-size: .85rem; line-height: 1; }
 
 .contact { background: var(--dark); color: var(--light); }
 .contact-inner { min-height: 39rem; padding: clamp(5rem, 9vw, 9rem) clamp(1.5rem, 5vw, 5.5rem); display: grid; grid-template-columns: minmax(8rem, 1fr) minmax(0, 5fr); gap: clamp(2rem, 5vw, 7rem); }
@@ -101,8 +101,8 @@ footer p span { margin: 0 .5rem; color: var(--brand-taupe); }
   .approach-content { margin-top: 2rem; }
   .approach h2 { font-size: clamp(2.8rem, 12vw, 4.5rem); }
   .approach-copy { width: auto; min-width: 0; margin-top: 3.5rem; padding: 0 0 0 1.5rem; }
-  .approach-note { margin-top: 3.5rem; padding-left: 1.5rem; align-items: flex-start; flex-direction: column; gap: .75rem; }
-  .approach-note span:not(:last-child)::after { margin-left: .75rem; }
+  .approach-note { margin-top: 3.5rem; padding-left: 1.5rem; flex-wrap: wrap; gap: .75rem; }
+  .approach-note .progress-arrow { margin: 0; }
   .contact-inner { min-height: 34rem; display: block; }
   .contact h2 { margin-top: 2.2rem; font-size: clamp(2.8rem, 12vw, 4.6rem); }
   .contact h2 br { display: none; }
