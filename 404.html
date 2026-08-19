@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Page not found — B Advisory</title>
+    <link rel="icon" href="assets/b-advisory-logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .not-found { min-height: calc(100svh - 6.5rem); padding: clamp(4rem, 12vw, 10rem) clamp(1.5rem, 5vw, 5.5rem); display: flex; flex-direction: column; justify-content: center; }
+      .not-found p { color: var(--muted); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; }
+      .not-found h1 { max-width: 60rem; margin: 1rem 0 3rem; }
+      .not-found .button { align-self: flex-start; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="B Advisory home">
+        <img src="assets/b-advisory-logo.png" width="1030" height="616" alt="B Advisory">
+      </a>
+    </header>
+    <main class="not-found">
+      <p>Error 404</p>
+      <h1>This page could not be <em>found.</em></h1>
+      <a class="button button-primary" href="./">Return home <span aria-hidden="true">→</span></a>
+    </main>
+  </body>
+</html>
