@@ -21,20 +21,18 @@ python3 -m http.server 8000
 
 Then visit [http://localhost:8000](http://localhost:8000). Because all assets use relative paths, opening `index.html` directly also works.
 
-## Replace the link placeholders
+## External links
 
-Before publishing, replace every instance of these placeholders in `index.html`:
+The production external links are configured directly in `index.html`:
 
-- `[BOOKING_URL]` — the full URL for the scheduling page
-- `[LINKEDIN_URL]` — the full LinkedIn profile or company URL
+- Booking: `https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vlmXPat2MYDRKgEhzXgUfnACqPblXoN0xEB41KQvExNa9zrO9hceU0Ti_ARnrypWYLtC7mbpo`
+- LinkedIn: `https://www.linkedin.com/in/brady-crabtree-14091574`
 
-They are intentionally repeated in the HTML so each link works without JavaScript. Find them quickly with:
+They are repeated in the HTML so each link works without JavaScript. Find them quickly with:
 
 ```sh
-rg '\[(BOOKING|LINKEDIN)_URL\]' index.html
+rg 'calendar\.google\.com|linkedin\.com' index.html
 ```
-
-Do not remove the surrounding quotation marks when replacing the values.
 
 ## Publish with GitHub Pages
 
